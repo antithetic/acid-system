@@ -1,0 +1,10 @@
+{
+  "name": "acid-systems",
+  "version": "1.0.0",
+  "description": "monorepo for acid-systems",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel dev"
+  },
+  "packageManager": "pnpm@11.3.0"
+}
