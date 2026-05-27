@@ -1,0 +1,18 @@
+{
+  "name": "@repo/unocss",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/uno.config.ts",
+  "types": "./src/uno.config.ts",
+  "exports": {
+    ".": "./src/uno.config.ts",
+    "./styles": "./src/styles/globals.css"
+  },
+  "files": [
+    "./src/uno.config.ts",
+    "./src/styles/globals.css"
+  ],
+  "devDependencies": {
+    "unocss": "^66.7.0"
+  }
+}
