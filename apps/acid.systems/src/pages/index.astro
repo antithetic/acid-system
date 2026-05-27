@@ -3,32 +3,36 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout>
-  <h1>
-    Acid Systems
-    <br />
-    <span class="subtitle"> Archive of Countercultural Intimacy & Dissent</span>
-  </h1>
-</Layout>
+  <div class="center-wrapper">
+    <div class="center-block">
+      <h1>
+        ACID Systems
+        <br />
+      </h1>
+      <div class="subtitle">Archive of Countercultural Intimacy & Dissent</div>
+    </div>
+  </div>
 
-<style>
-  h1 {
-    font-family: 'serif';
-    font-size: 4.2rem;
-    letter-spacing: 0.069rem;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .subtitle {
-    font-family: 'mono';
-    font-size: 1.2rem;
-    letter-spacing: 0.069rem;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
+  <style>
+    .center-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .center-block {
+      text-align: center;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 4.2rem;
+      letter-spacing: 0.069rem;
+    }
+    .subtitle {
+      font-family: var(--font-mono);
+      font-size: 1.2rem;
+      letter-spacing: 0.069rem;
+    }
+  </style>
+</Layout>
