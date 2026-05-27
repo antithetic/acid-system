@@ -1,0 +1,13 @@
+node_modules
+.sanity
+.env*
+.DS_Store
+.turbo
+*.log
+dist
+dist-ssr
+*.local
+.env
+.cache
+server/dist
+public/dist

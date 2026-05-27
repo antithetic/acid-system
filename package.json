@@ -4,7 +4,14 @@
   "description": "monorepo for acid-systems",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r --parallel dev"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "format": "prettier --write .",
+    "lint": "pnpm dlx oxlint@latest --fix"
   },
-  "packageManager": "pnpm@11.3.0"
+  "packageManager": "pnpm@11.3.0",
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "turbo": "^2.9.14"
+  }
 }
