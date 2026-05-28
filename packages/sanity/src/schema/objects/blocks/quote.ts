@@ -11,6 +11,7 @@ export default defineType({
       name: 'quote',
       title: 'Quote',
       type: 'text',
+      validation: (Rule) => Rule.required(),
     }),
 
     defineField({
