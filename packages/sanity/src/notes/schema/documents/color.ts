@@ -35,6 +35,7 @@ export const colorNote = defineType({
       title: 'Palette',
       type: 'array',
       of: [{type: 'colorEntry'}],
+      validation: (Rule) => Rule.max(5),
     }),
     defineField({
       name: 'description',
@@ -59,8 +60,8 @@ export const colorNote = defineType({
     defineField({
       name: 'dateCreated',
       title: 'Date Created',
-      type: 'date',
-      initialValue: new Date().toISOString(),
+      type: 'richDate',
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'relatedColors',

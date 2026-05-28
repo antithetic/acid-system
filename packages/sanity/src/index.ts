@@ -7,6 +7,7 @@ import {defineConfig} from 'sanity'
 import {media} from 'sanity-plugin-media'
 import {ptString} from 'sanity-plugin-pt-string'
 import {references, referencesView} from 'sanity-plugin-references'
+import {richDate} from '@sanity/rich-date-input'
 import {singletonTools} from 'sanity-plugin-singleton-management'
 import {structureTool} from 'sanity/structure'
 import {tags} from 'sanity-plugin-tags-v4'
@@ -29,6 +30,7 @@ export const sharedPlugins = {
     media(),
     webhooksTrigger(),
     references(),
+    richDate(),
     singletonTools(),
     tags(),
   ],
