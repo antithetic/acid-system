@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 import {BlockContentIcon} from '@sanity/icons'
 
-export const richText = defineType({
-  name: 'richText',
+export const richTextSection = defineType({
+  name: 'richTextSection',
   title: 'Rich Text Section',
   type: 'object',
   icon: BlockContentIcon,
