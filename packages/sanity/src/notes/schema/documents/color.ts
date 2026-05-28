@@ -88,7 +88,7 @@ export const colorNote = defineType({
             width: '100%',
             height: '100%',
             ...(isGradient && css
-              ? {backgroundImage: css}
+              ? {background: css}
               : {backgroundColor: hex ?? 'transparent'}),
             border: '1px solid rgba(0,0,0,0.15)',
             boxSizing: 'border-box',
