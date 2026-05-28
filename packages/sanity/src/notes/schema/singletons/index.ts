@@ -1,1 +1,3 @@
-export const notesSingletons = []
+import {notesSettings} from './settings'
+
+export const notesSingletons = [notesSettings]

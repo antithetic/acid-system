@@ -24,13 +24,18 @@ export const colorEntry = defineType({
     },
     prepare({color, name}) {
       const hex = color?.hex as string | undefined
+      const hex2 = (color as {hex2?: string} | undefined)?.hex2
+      const css = color?.css as string | undefined
+      const isGradient = Boolean(color?.isGradient)
 
       const Media = () =>
         React.createElement('div', {
           style: {
             width: '100%',
             height: '100%',
-            backgroundColor: hex ?? 'transparent',
+            ...(isGradient && css
+              ? {background: css}
+              : {backgroundColor: hex ?? 'transparent'}),
             border: '1px solid rgba(0,0,0,0.15)',
             boxSizing: 'border-box',
           },
@@ -38,7 +43,9 @@ export const colorEntry = defineType({
 
       return {
         title: name ?? hex ?? 'Untitled',
-        subtitle: hex ?? 'No color selected',
+        subtitle: isGradient
+          ? [hex, hex2].filter(Boolean).join(' → ') || 'Gradient'
+          : (hex ?? 'No color selected'),
         media: Media,
       }
     },
