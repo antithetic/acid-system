@@ -18,6 +18,7 @@ export default defineType({
       name: 'alignment',
       title: 'Alignment',
       type: 'string',
+      initialValue: 'center',
 
       options: {
         list: [
