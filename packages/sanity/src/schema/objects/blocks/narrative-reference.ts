@@ -1,7 +1,7 @@
 import {defineField, defineType} from 'sanity'
 import {LinkIcon} from '@sanity/icons'
 
-export default defineType({
+export const narrativeReference = defineType({
   name: 'narrativeReference',
   title: 'Narrative Reference',
   type: 'object',
@@ -54,7 +54,7 @@ export default defineType({
 
     prepare({section}) {
       return {
-        title: `Narrative → ${section}`,
+        title: `Narrative → ${section || 'Unassigned'}`,
       }
     },
   },
