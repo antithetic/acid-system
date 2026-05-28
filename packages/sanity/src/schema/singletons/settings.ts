@@ -1,11 +1,11 @@
 import {defineField, defineType} from 'sanity'
-import {Cog} from 'lucide-react'
+import {CogIcon} from '@sanity/icons'
 
 export default defineType({
   name: 'settings',
   title: 'Site Settings',
   type: 'document',
-  icon: Cog,
+  icon: CogIcon,
   groups: [
     {name: 'general', title: 'General', default: true},
     {name: 'seo', title: 'SEO'},
