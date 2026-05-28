@@ -1,4 +1,5 @@
 import {acidSystemsSchemaTypes} from './acid.systems'
 import {notesSchemaTypes} from './notes'
 
-export const schemaTypes = [...acidSystemsSchemaTypes, ...notesSchemaTypes]
+export const acidSystemsSchema = [...acidSystemsSchemaTypes]
+export const notesSchema = [...notesSchemaTypes]
