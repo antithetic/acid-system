@@ -14,6 +14,7 @@
     "sanity": "^5.27.0",
     "sanity-plugin-media": "^4.3.0",
     "sanity-plugin-references": "^1.0.1",
+    "sanity-plugin-tags-v4": "^1.0.18",
     "sanity-plugin-webhooks-trigger": "^0.8.1",
     "styled-components": "^6.1.18"
   },
