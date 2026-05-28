@@ -20,12 +20,12 @@ export const sharedConfig = {
 
 export const sharedPlugins = {
   plugins: [
+    visionTool(),
     media(),
+    webhooksTrigger(),
     references(),
     singletonTools(),
     tags(),
-    visionTool(),
-    webhooksTrigger(),
   ],
 }
 export default defineConfig([
@@ -37,11 +37,11 @@ export default defineConfig([
 
     ...sharedConfig,
     plugins: [
-      ...sharedPlugins.plugins,
       structureTool({
         defaultDocumentNode: (S) =>
           S.document().views([S.view.form(), referencesView(S)]),
       }),
+      ...sharedPlugins.plugins,
     ],
 
     schema: {
@@ -58,8 +58,9 @@ export default defineConfig([
     ...sharedConfig,
 
     plugins: [
-      ...sharedPlugins.plugins,
       structureTool({}),
+      ...sharedPlugins.plugins,
+
       youtubeInput({
         // @ts-ignore
         apiKey: process.env.YOUTUBE_API_KEY,
