@@ -1,3 +1,5 @@
+import {theme} from 'https://themer.sanity.build/api/hues?default=898586&primary=807986&transparent=888686&positive=43d675;300&caution=fbd024;200&darkest=121111'
+
 import {visionTool} from '@sanity/vision'
 import {Cannabis, BrainCog} from 'lucide-react'
 import {customColorPicker} from 'sanity-plugin-color-input'
@@ -16,6 +18,7 @@ import {acidSystemsSchema} from './acid.systems/schema'
 import {notesSchema} from './notes/schema'
 
 export const sharedConfig = {
+  theme,
   projectId: 'nmhp3u9m',
   dataset: 'production',
 }
