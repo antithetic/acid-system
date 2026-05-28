@@ -3,6 +3,7 @@ import {Cannabis} from 'lucide-react'
 import {defineConfig} from 'sanity'
 import {media} from 'sanity-plugin-media'
 import {references, referencesView} from 'sanity-plugin-references'
+import {singletonTools} from 'sanity-plugin-singleton-management'
 import {structureTool} from 'sanity/structure'
 import {tags} from 'sanity-plugin-tags-v4'
 
@@ -28,6 +29,7 @@ export default defineConfig({
     media(),
     references(),
     tags(),
+    singletonTools(),
   ],
 
   schema: {

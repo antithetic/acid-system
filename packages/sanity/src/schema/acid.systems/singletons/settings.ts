@@ -6,6 +6,9 @@ export default defineType({
   title: 'Site Settings',
   type: 'document',
   icon: CogIcon,
+  options: {
+    singleton: true, // Identify this document as a singleton
+  },
   groups: [
     {name: 'general', title: 'General', default: true},
     {name: 'seo', title: 'SEO'},
