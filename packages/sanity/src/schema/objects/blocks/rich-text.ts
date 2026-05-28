@@ -24,5 +24,10 @@ export default defineType({
     select: {
       title: 'heading',
     },
+    prepare({title}) {
+      // if no title, return 'Rich Text Section - Untitled'
+      // TODO: customize component 'untitled' styled italic and in a lighter color of grey
+      return {title: title || 'Rich Text Section - Untitled'}
+    },
   },
 })

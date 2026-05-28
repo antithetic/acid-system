@@ -20,7 +20,7 @@ export default defineType({
   fields: [
     defineField({
       name: 'name',
-      title: 'ProjectName',
+      title: 'Project Name',
       type: 'string',
       group: 'identity',
       validation: (Rule) => Rule.required(),
